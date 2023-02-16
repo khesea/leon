@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LEON</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href = "fonts/unisans/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link rel="shortcut icon" href="https://ru.odvme.com/uploads/posts/2022-10/leonbet.webp">
+  </head>
+  <body>
+    <img src="style/images/leon.png" class="leon">
+    <span class="header-text header">Gira la rueda y gana</span>
+    <span class="header-incline header">fantásticos premios</span>
+    <img src="style/images/girl.png" class="girl image">
+    <img src="style/images/ball1.png" class="ball1 image">
+    <img src="style/images/ball2.png" class="ball2 image">
+    <img src="style/images/ball3.png" class="ball3 image">
+    <img src="style/images/ball4.png" class="ball4 image">
+    <img src="style/images/ball5.png" class="ball5 image">
+    <img src="style/images/ball6.png" class="ball6 image">
+    <img src="style/images/steklo.png" class="decals image">
+    <img src="style/images/girlmobile.png" class="girlmobile mobile">
+    <img src="style/images/ballmobile1.png" class="ballmobile1 mobile">
+    <img src="style/images/ballmobile2.png" class="ballmobile2 mobile">
+    <img src="style/images/ballmobile3.png" class="ballmobile3 mobile">
+    <img src="style/images/ballmobile4.png" class="ballmobile4 mobile">
+    <img src="style/images/ballmobile5.png" class="ballmobile5 mobile">
+    <img src="style/images/ballmobile6.png" class="ballmobile6 mobile">
+
+    <div class="container">
+      <button id="spin" onclick="Spin()"><img src="style/images/swap_button.png" width="100%" class="spinImage" draggable="false"></button>
+      <div class="fortune_wheel">
+        <div class="one">
+          <span><span class="count_odd">2x sin</span><br><span class="text_odd1">ninguna</span><br><span class="text_odd2">ganancia</span></span>
+        </div>
+        <div class="two">
+          <span><span class="count_even">50</span><br><span class="text_even1">giros</span><br><span class="text_even2">gratis</span></span>
+        </div>
+        <div class="three">
+          <span><span class="count_odd">300</span><br><span class="text_odd1">bono<br><span class="text_odd2">soles</span></span>
+        </div>
+        <div class="four">
+          <span><span class="count_even">25</span><br><span class="text_even1">giros</span><br><span class="text_even2">gratis</span></span>
+        </div>
+        <div class="five">
+          <span><span class="count_odd">1000</span><br><span class="text_odd1">bono<br><span class="text_odd2">soles</span></span>
+        </div>
+        <div class="six">
+          <span><span class="count_odd" id="unique_count_odd">300</span><br><span id="unique_text_odd1">bono</span><br><span id="unique_text_odd2">soles</span></span>
+        </div>
+        <div class="seven">
+          <span><span class="count_even" id="unique_count_even">50</span><br><span id="unique_text_even1">giros</span><br><span id="unique_text_even2">gratis</span></span>
+        </div>
+        <div class="eight">
+          <span><span class="count_even">25</span><br><span class="text_even1">giros</span><br><span class="text_even2">gratis</span></span>
+        </div>
+      </div>
+      <div class="circle"> </div>
+      <img src="border.png" class="activeBorder" draggable="false">
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup_content">
+          <div class="popup_win">
+            <img src="style/images/popup_win.png">
+            <div class="popup_text">
+              <span class="popup_header">Ganaste!</span>
+              <br><span class="popup__text">Te espera un bono<br>de hasta S/.1,000!</span>
+            </div>
+            <button onclick="removePopup()" class="popup_button">Llevar</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="popupLose" id="popupLose">
+      <div class="popup_content">
+        <div class="popup_lose">
+          <img src="style/images/popup_lose.png">
+          <div class="popup_lose_text">
+            <span class="popup_lose_header">Oh, no hay<br>suerte ahora!</span>
+          </div>
+          <button onclick="removePopupLose()" class="popupLose_button">GIRAR DE NUEVO</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/fortune_wheel.js"> </script>
+  </body>
+</html>
